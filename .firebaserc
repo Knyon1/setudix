@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fala-feio",
+    ".firebaserc": "fala-feio"
+  }
+}
