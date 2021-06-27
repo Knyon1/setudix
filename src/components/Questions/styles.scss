@@ -1,0 +1,109 @@
+.question {
+    max-width: 800px;
+    height: auto;
+    background: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.631);
+    border: 3px solid #8c8c8c;
+    padding: 24px;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: left;
+    white-space: inherit;
+    margin: 0 15px 0 15px;
+
+
+    margin-top: 64px;
+
+    & + .question {
+        margin-top: 32px;
+    }
+
+    p {
+        display: block;
+        color: #29292e;
+
+        height: auto;
+        word-break: break-all;
+        
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 2px solid #835afd;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.467);
+            }
+
+            span {
+                margin-left: 14px;
+                color: #343435;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .like {
+        display: flex;
+        gap: 15px;
+    }
+
+    button {
+        display: flex;
+        padding: 20px 0 0 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        transition: filter 0.2s;
+  
+        
+        span {
+            font-size: 18px;
+            margin-left: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+
+        &.liked {
+            color: rgb(44, 233, 19);
+
+            >svg path {
+                stroke: rgb(44, 233, 19);
+                margin-left: 10px;
+
+            }
+            
+
+
+        }
+
+        &.deslike-button {
+            color: #f04646;
+
+             svg path {
+                 stroke: #f04646;
+
+             }
+
+        }
+
+        &:hover {
+            filter: brightness(0.7);
+        }
+    }
+
+
+}
