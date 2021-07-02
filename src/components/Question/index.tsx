@@ -13,7 +13,7 @@ type QuestionsProps = {
 }
 
 
-export function Questions({
+export function Question({
     content,
     author,
     children,
